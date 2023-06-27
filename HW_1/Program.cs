@@ -4,24 +4,24 @@
 // Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
 
-Console.WriteLine("Программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
-Console.WriteLine("Для начала нажмите ENTER");
-while (Console.ReadKey().Key != ConsoleKey.Enter) {}
-Console.Write("Введите 1-е число: ");
-double firstNumber = Convert.ToDouble(Console.ReadLine());
-Console.Write("Введите 2-е число: ");
-double secondNumber = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
+// Console.WriteLine("Для начала нажмите ENTER");
+// while (Console.ReadKey().Key != ConsoleKey.Enter) {}
+// Console.Write("Введите 1-е число: ");
+// double firstNumber = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите 2-е число: ");
+// double secondNumber = Convert.ToDouble(Console.ReadLine());
 
-if (firstNumber > secondNumber){
-Console.WriteLine("Первое число ("+ firstNumber + ") больше второго (" + secondNumber + ").");   
-}
-else 
-if(firstNumber < secondNumber){
-Console.WriteLine("Второе число ("+ secondNumber + ") больше первого (" + firstNumber + ").");
-}
-else Console.WriteLine("Числа равны!");
-Console.WriteLine("Для выхода нажмите ESCAPE");
-while (Console.ReadKey().Key != ConsoleKey.Escape) {};
+// if (firstNumber > secondNumber){
+// Console.WriteLine("Первое число ("+ firstNumber + ") больше второго (" + secondNumber + ").");   
+// }
+// else 
+// if(firstNumber < secondNumber){
+// Console.WriteLine("Второе число ("+ secondNumber + ") больше первого (" + firstNumber + ").");
+// }
+// else Console.WriteLine("Числа равны!");
+// Console.WriteLine("Для выхода нажмите ESCAPE");
+// while (Console.ReadKey().Key != ConsoleKey.Escape) {};
 
 
 
@@ -103,5 +103,18 @@ while(i<=N && j<(N-1))
 
 */        
         
-        
+Console.Write("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int i=1; // про четные мы знаем, что после нуля первое четное 2
+int even=0; // создали счетчик четных чисел
+Console.WriteLine("Четные значения в диапазоне от 1 до N: ");
+while(i<=N) // запускаем цикл со счетчиком до N включительно
+{
+    if(i%2 == 0) // если счетчик, он же число, делится на 2
+    {      
+        even = i;  // то записываем число в переменную "четное"
+        Console.Write(even + "; "); //выводим переменную 
+    }
+    i++; // после проверки прибавляем счетчик для взятия следующего числа
+}        
      
