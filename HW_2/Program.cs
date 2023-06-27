@@ -101,3 +101,22 @@
 //             index++;
 //         }
 // }
+
+// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+int Prompt(string message){                // Прекрасная ф-ция для ввода данных
+    System.Console.Write(message);
+    string value = Console.ReadLine();
+    int result = Convert.ToInt32(value);
+    return result;
+}
+int number = Prompt("Введите число: "); // вызвали ф-цию, которая выдала сообщение message и далее произвела ввод числа, преобразовала его в int и вернула в переменной result
+if (number >= 100 && number < 1000)
+{
+    int result = (number % 100) / 10;
+    Console.WriteLine($"В числе '{number}' вторая цифра '{result}'"); // такие кавычки из-за свойств класса System, так как данные в юникоде 16
+}
+else
+{
+    Console.WriteLine($"Ошибка: число '{number}' не трехзначное");
+}

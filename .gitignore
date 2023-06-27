@@ -7,6 +7,7 @@ HW_1/HW_1.csproj
 HW_1/bin
 HW_1/obj
 
+<<<<<<< HEAD
 HW_1.zip
 
 HW_2/HW_2.csproj
@@ -21,3 +22,10 @@ Seminar2/obj/
 Seminar2/
 
 checks.json
+=======
+Lessons/Lessons.csproj
+Lessons/bin/
+Lessons/obj/
+Lessons/
+
+>>>>>>> 440e2596204a9307d7938efbd792959ec3a9ad3a
