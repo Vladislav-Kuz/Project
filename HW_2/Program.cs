@@ -80,24 +80,25 @@
 
 // ДОПОЛНИТЕЛЬНОЕ ЗАДАНИЕ: Напишите программу, которая заполняет массив на 10 «интересных» случайных целых чисел от 10 до 1000. 
 
-// Console.Write("Программа, которая заполняет массив на 10 «интересных» случайных целых чисел от 10 до 1000.\n");
-// int index = 0; 
-// Console.Write($"10 интересных чисел:\n");
-// while(index<10)
-// {
-//     int numberRnd = new Random().Next(10,1000);
-//     int[] intrestingNumber = new int[10];       
-//     int firstDight = numberRnd / 100;
-//     int secDight = numberRnd / 10 % 10;
-//     int thirdDight = numberRnd % 10;
-//     int ifInterest = (firstDight * secDight * thirdDight)/(firstDight + secDight + thirdDight);
-//     int remainder = (firstDight * secDight * thirdDight)%(firstDight + secDight + thirdDight);
-        
-//         if(remainder == 0 && ifInterest >= 1)
-//         {
-//             intrestingNumber[index] = numberRnd;
-            
-//             Console.Write($"Число: {intrestingNumber[index]}, остаток от деления: {ifInterest}\n");
-//             index++;
-//         }
-// }
+Console.Write("Программа, которая заполняет массив на 10 «интересных» случайных целых чисел от 10 до 1000.\n");
+int index = 0; 
+int[] intrestingNumber = new int[10]; 
+Console.Write($"Массив интересных чисел: ");
+while(index<10)
+{
+    int numberRnd = new Random().Next(10,1000);
+    int firstDight = numberRnd / 100;
+    int secDight = numberRnd / 10 % 10;
+    int thirdDight = numberRnd % 10;
+    int ifInterest = (firstDight * secDight * thirdDight)/(firstDight + secDight + thirdDight);
+    int remainder = (firstDight * secDight * thirdDight)%(firstDight + secDight + thirdDight);
+        if(remainder == 0 && ifInterest >= 1)
+        {
+            intrestingNumber[index] = numberRnd;     
+            index++;
+        }
+}
+  for (int n=0 ; n<10 ; n++)
+  {
+    Console.Write($"{intrestingNumber[n]},");    
+  }
