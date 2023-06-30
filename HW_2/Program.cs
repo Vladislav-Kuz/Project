@@ -19,6 +19,9 @@
 
 
 
+
+
+
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. До 10 символов
 
 // int result=0;
@@ -80,64 +83,49 @@
 
 // ДОПОЛНИТЕЛЬНОЕ ЗАДАНИЕ: Напишите программу, которая заполняет массив на 10 «интересных» случайных целых чисел от 10 до 1000. 
 
-Console.Write("Программа, которая заполняет массив на 10 «интересных» случайных целых чисел от 10 до 1000.\n");
-int index = 0; 
-<<<<<<< HEAD
-Console.Write($"10 интересных чисел:\n");
-while(index<10)
-{
-    int numberRnd = new Random().Next(10,1000);
-    int[] intrestingNumber = new int[10];       
-=======
-int[] intrestingNumber = new int[10]; 
-Console.Write($"Массив интересных чисел: ");
-while(index<10)
-{
-    int numberRnd = new Random().Next(10,1000);
->>>>>>> ea520f316857f3034b6d409cfd5677302ab66e2e
-    int firstDight = numberRnd / 100;
-    int secDight = numberRnd / 10 % 10;
-    int thirdDight = numberRnd % 10;
-    int ifInterest = (firstDight * secDight * thirdDight)/(firstDight + secDight + thirdDight);
-    int remainder = (firstDight * secDight * thirdDight)%(firstDight + secDight + thirdDight);
-<<<<<<< HEAD
-        
-        if(remainder == 0 && ifInterest >= 1)
-        {
-            intrestingNumber[index] = numberRnd;
-            
-            Console.Write($"Число: {intrestingNumber[index]}, остаток от деления: {ifInterest}\n");
-            index++;
-        }
-}
+// Console.Write("Программа, которая заполняет массив на 10 «интересных» случайных целых чисел от 10 до 1000.\n");
+// int[] intrestingNumber = new int[10];
+// Console.Write($"10 интересных чисел:\n");
+// int index = 0;
+// while(index < 10)
+// {
+//     int numberRnd = new Random().Next(10,1000);
+//     int firstDight = numberRnd / 100;
+//     int secDight = numberRnd / 10 % 10;
+//     int thirdDight = numberRnd % 10;
+//     int ifInterest = (firstDight * secDight * thirdDight)/(firstDight + secDight + thirdDight);
+//     int remainder = (firstDight * secDight * thirdDight)%(firstDight + secDight + thirdDight);
+//         if(remainder == 0 && ifInterest >= 1)
+//         {
+//             intrestingNumber[index] = numberRnd;     
+//             index++;
+//         }
+// }
+// for (int n = 0; n < 10; n++)
+// {
+//     Console.Write($"{intrestingNumber[n]},");    
+// }
+
+
+
+
+
 
 // Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 
-// int Prompt(string message){                // Прекрасная ф-ция для ввода данных
-//     System.Console.Write(message);
-//     string value = Console.ReadLine();
-//     int result = Convert.ToInt32(value);
-//     return result;
-// }
-// int number = Prompt("Введите число: "); // вызвали ф-цию, которая выдала сообщение message и далее произвела ввод числа, преобразовала его в int и вернула в переменной result
-// if (number >= 100 && number < 1000)
-// {
-//     int result = (number % 100) / 10;
-//     Console.WriteLine($"В числе '{number}' вторая цифра '{result}'"); // такие кавычки из-за свойств класса System, так как данные в юникоде 16
-// }
-// else
-// {
-//     Console.WriteLine($"Ошибка: число '{number}' не трехзначное");
-// }
-=======
-        if(remainder == 0 && ifInterest >= 1)
-        {
-            intrestingNumber[index] = numberRnd;     
-            index++;
-        }
-}
-  for (int n=0 ; n<10 ; n++)
-  {
-    Console.Write($"{intrestingNumber[n]},");    
-  }
->>>>>>> ea520f316857f3034b6d409cfd5677302ab66e2e
+    int Prompt(string message){                // Прекрасная ф-ция для ввода данных
+    System.Console.Write(message);
+    string? value = Console.ReadLine();
+    int result = Convert.ToInt32(value);
+    return result;
+ }
+ int number = Prompt("Введите число: "); // вызвали ф-цию, которая выдала сообщение message и далее произвела ввод числа, преобразовала его в int и вернула в переменной result
+ if (number >= 100 && number < 1000)
+ {
+     int result = (number % 100) / 10;
+     Console.WriteLine($"В числе '{number}' вторая цифра '{result}'"); // такие кавычки из-за свойств класса System, так как данные в юникоде 16
+ }
+ else
+ {
+     Console.WriteLine($"Ошибка: число '{number}' не трехзначное");
+ }
