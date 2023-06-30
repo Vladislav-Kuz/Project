@@ -78,3 +78,26 @@ void Power(double[] arrayFill, int n)
 
 Power(array, N);
 
+int Prompt(string message)
+{
+	Console.Write(message);
+	string number = Console.ReadLine();
+	int intNumber = Convert.ToInt32(number);
+	return intNumber;
+}
+		
+void Power(int n)
+{
+    int i;
+	double[] arrayFill = new double[n+1];
+    for (i = 0 ; i< n+1 ; i++)
+    {
+        double result =  Math.Pow(i,2);
+        arrayFill[i] = result;
+    	Console.WriteLine($"Числу {i} соответствует его квадрат {arrayFill[i]}, ");    
+    }	
+}
+
+int N = Prompt("Введите число: ");
+Power(N);
+
