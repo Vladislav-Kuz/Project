@@ -1,4 +1,12 @@
-﻿/********************************************************************/
+﻿/*********************************************************************
+
+07. Анализ цифр числа
+Задачи № 21 -  № 27 из 400 задач по C# 
+
+
+*********************************************************************/
+/********************************************************************/
+
 // Home_21. Дано трехзначное число. Найти:
 
 // а) число единиц в нем;
@@ -57,30 +65,168 @@
 // Решить в одной программе.
 
 
+// Console.Write("Введите трехзначное число: ");
+// string? stringNumber = Console.ReadLine()!;
+// Console.WriteLine();
+// int number;
+// bool isNumber = int.TryParse(stringNumber, out number);
+// if (stringNumber.Length == 3 && isNumber){
+// Console.WriteLine($"Для введенного числа {number}: ");
+// Console.WriteLine();
+// // вычисления
 
+
+// // 1. Разворачивание строки
+// string toReverse = stringNumber;
+// char[] ReverseNumber = toReverse.ToCharArray();
+// Array.Reverse(ReverseNumber);
+// string reversed = new string(ReverseNumber);
+// int reversedNumber = Convert.ToInt32(reversed);
+
+// //  2. Перенос первой цифры в конец
+// string toSwap = stringNumber;
+// char temp;
+// char[] SwapNumber = toSwap.ToCharArray();
+// temp = SwapNumber[0];
+// SwapNumber[0] = SwapNumber[1];
+// SwapNumber[1] = SwapNumber[2];
+// SwapNumber[2] = temp;
+// string swapedFirstToLast = new string(SwapNumber);
+// int swapedNumberFirstToLast = Convert.ToInt32(swapedFirstToLast);
+
+// // 3. Перенос последней цифры в начало
+// char[] SwapNumber2 = toSwap.ToCharArray();
+// temp = SwapNumber2[2];
+// SwapNumber2[2] = SwapNumber2[1];
+// SwapNumber2[1] = SwapNumber2[0];
+// SwapNumber2[0] = temp;
+// string swapedLastToFirst = new string(SwapNumber2);
+// int swapedNumberLastToFirst = Convert.ToInt32(swapedLastToFirst);
+
+// // 4. Перестановка первой и второй цифры
+// char[] SwapNumber3 = toSwap.ToCharArray();
+// temp = SwapNumber3[0];
+// SwapNumber3[0] = SwapNumber3[1];
+// SwapNumber3[1] = temp;
+// string swapedFirstSecond = new string(SwapNumber3);
+// int swapedNumberFirstSecond = Convert.ToInt32(swapedFirstSecond);
+
+// // 5. Перестановка второй и третьей цифры
+// char[] SwapNumber4 = toSwap.ToCharArray();
+// temp = SwapNumber4[1];
+// SwapNumber4[1] = SwapNumber4[2];
+// SwapNumber4[2] = temp;
+// string swapedSecondThird = new string(SwapNumber4);
+// int swapedNumberSecondThird = Convert.ToInt32(swapedSecondThird);
+
+
+// // вывод в консоль
+// Console.WriteLine($"реверс числа: {reversedNumber}");
+// Console.WriteLine($"перенос первой цифры в конец: {swapedNumberFirstToLast}");
+// Console.WriteLine($"перенос последней цифры в начало: {swapedNumberLastToFirst}");
+// Console.WriteLine($"перестановка 1 и 2 цифры: {swapedNumberFirstSecond}");
+// Console.WriteLine($"перестановка 2 и 3 цифры: {swapedNumberSecondThird}");
+
+// }
+// else
+// {
+//     if (stringNumber.Length != 3){
+//     Console.WriteLine("Это не трехзначное число");
+//     }
+//     if (!isNumber){
+//     Console.WriteLine("Это не число");
+//     }
+// }
+
+
+/********************************************************************/
 
 
 // Home_23. Дано трехзначное число, в котором все цифры различны. Получить шесть чисел, образованных при перестановке цифр заданного числа.
-// 1. Проверка на различие цифр
-// 2. 
+
+// Console.Write("Введите трехзначное число: ");
+// string? stringNumber = Console.ReadLine()!;
+// Console.WriteLine();
+// int number;
+// bool isNumber = int.TryParse(stringNumber, out number);
+// if (stringNumber.Length == 3 && isNumber)
+// {
+//     char[] array = stringNumber.ToCharArray();
+//     int length = stringNumber.Length;
+//     int firstDight = number / 100;
+//     int secndDight = number / 10 % 10;
+//     int ThirdDight = number % 10;
+
+//     if (array[0] != array[1] && array[0] != array[2] && array[1] != array[2]) // проверка на одинаковые цифры
+//     {
+//         int first = firstDight * 100 + secndDight * 10 + ThirdDight;
+//         int secnd = firstDight * 100 + secndDight + ThirdDight * 10;
+//         int third = firstDight * 10 + secndDight * 100 + ThirdDight;
+//         int forth = firstDight * 10 + secndDight + ThirdDight * 100;
+//         int fives = firstDight + secndDight * 100 + ThirdDight * 10;
+//         int sixes = firstDight + secndDight * 10 + ThirdDight * 100;
+
+//         // вывод в консоль
+//         Console.Write($"Из цифр {firstDight}, {secndDight}, {ThirdDight} составляются следующие варианты: \n");
+//         Console.Write($"{first}, {secnd}, {third}, {forth}, {fives}, {sixes}");
+//         Console.WriteLine();
+//     }
+//     else Console.Write("В числе есть одинаковые цифры"); // обработка исключений
+// }
+// else // обработка исключений
+// {
+//     if (!isNumber)
+//     {
+//         Console.WriteLine("Это не число");
+//     }
+//     else
+//     if (stringNumber.Length != 3)
+//     {
+//         Console.WriteLine("Это не трехзначное число");
+//     }
+// }
 
 
-// Home_24. Из трехзначного числа x вычли его последнюю цифру. Когда результат разделили на 10, а к частному слева приписали последнюю цифру числа x, 
-// то получилось число 237. Найти число x.
-
-// Home_25. В трехзначном числе x зачеркнули первую цифру. Когда оставшееся число умножили на 10, а произведение сложили с первой цифрой числа x, 
-//то получилось число 564. Найти число x.
-
-// Home_26. В трехзначном числе x зачеркнули его вторую цифру. Когда к образованному при этом двузначному числу слева приписали вторую цифру числа x, 
-// то получилось число 546. Найти число x.
- 
-//xyz -> xz -> yxz = 546
+/********************************************************************/
 
 
+Home_24. Из трехзначного числа x вычли его последнюю цифру. Когда результат разделили на 10, а к частному слева приписали последнюю цифру числа x, 
+то получилось число 237. Найти число x.
+
+
+
+
+
+Home_25. В трехзначном числе x зачеркнули первую цифру. Когда оставшееся число умножили на 10, а произведение сложили с первой цифрой числа x, 
+то получилось число 564. Найти число x.
 
 
 
 /********************************************************************/
+
+// Home_26. В трехзначном числе x зачеркнули его вторую цифру. Когда к образованному при этом двузначному числу слева приписали вторую цифру числа x, 
+// то получилось число 546. Найти число x.
+
+// пусть 546=xyz<-yz<-YXZ=456
+
+// int number = 546;
+// string stringNumber = Convert.ToString(number);
+// Console.WriteLine($"Производим действия с числом {number}: ");
+// // получаем цифры числа
+// int firstRes = number/100;
+// int secRes=number/10%10;
+// int thirdRes=number%10;
+// // присваиваем цифрам полученного числа цифры изначального по алгоритму
+// int secDight = firstRes;
+// int firstDight = secRes;
+// int thirdDight = thirdRes;
+// int result = thirdDight + firstDight*100 + secDight*10;
+// // вывод в консоль
+// Console.WriteLine($"X =  {result}");
+
+
+/********************************************************************/
+
 // Home_27. В трехзначном числе x зачеркнули его последнюю цифру. Когда в оставшемся двузначном числе переставили цифры, а затем приписали к ним слева последнюю цифру числа x, 
 // то получилось число 654. Найти число x.
 
