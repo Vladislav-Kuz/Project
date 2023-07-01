@@ -61,22 +61,22 @@
 
 
 
-Console.Write("Введите число: \n");
-int N = Convert.ToInt32(Console.ReadLine());
-double[] array = new double[N+1];
+// Console.Write("Введите число: \n");
+// int N = Convert.ToInt32(Console.ReadLine());
+// double[] array = new double[N+1];
 
-void Power(double[] arrayFill, int n)
-{
-    int i;
-    for (i = 0 ; i< n+1 ; i++)
-    {
-        double result =  Math.Pow(i,2);
-        arrayFill[i] = result;
-        Console.WriteLine($"Числу {i} соответствует его квадрат {arrayFill[i]}, ");
-    }
-}
+// void Power(double[] arrayFill, int n)
+// {
+//     int i;
+//     for (i = 0 ; i< n+1 ; i++)
+//     {
+//         double result =  Math.Pow(i,2);
+//         arrayFill[i] = result;
+//         Console.WriteLine($"Числу {i} соответствует его квадрат {arrayFill[i]}, ");
+//     }
+// }
 
-Power(array, N);
+// Power(array, N);
 
 int Prompt(string message)
 {
