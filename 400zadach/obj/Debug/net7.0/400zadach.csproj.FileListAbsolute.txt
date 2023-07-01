@@ -1,0 +1,15 @@
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\400zadach.csproj.AssemblyReference.cache
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\400zadach.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\400zadach.AssemblyInfoInputs.cache
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\400zadach.AssemblyInfo.cs
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\400zadach.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\bin\Debug\net7.0\400zadach.exe
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\bin\Debug\net7.0\400zadach.deps.json
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\bin\Debug\net7.0\400zadach.runtimeconfig.json
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\bin\Debug\net7.0\400zadach.dll
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\bin\Debug\net7.0\400zadach.pdb
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\400zadach.dll
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\refint\400zadach.dll
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\400zadach.pdb
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\400zadach.genruntimeconfig.cache
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\400zadach\obj\Debug\net7.0\ref\400zadach.dll
