@@ -12,12 +12,12 @@
 
 /********************************************************************/
 
-// Console.WriteLine("Введите пятизначное число: ");
+// Console.WriteLine("Введите пятизначное число или строку из пяти символов: ");
 // string? value = Console.ReadLine()!;
 // int res;
 // bool flagDight = int.TryParse(value, out res);
 // char[] array = value.ToCharArray();
-// //char[] array = value.ToArray<char>();
+// //char[] array = value.ToArray<char>(); // можно таким методом
 // int length = array.Length;
 // int i = 0;
 // int flag = 0;
