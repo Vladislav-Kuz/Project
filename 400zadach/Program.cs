@@ -204,8 +204,23 @@
 // Home_24. Из трехзначного числа x вычли его последнюю цифру. Когда результат разделили на 10, а к частному слева приписали последнюю цифру числа x, 
 // то получилось число 237. Найти число x.
 
+// x = xyz = xyz-z = (xyz-z)/10 = z(xy) = 237
+
+//int resultNumber = 237;
+int number=237;
+int firstDight = number/100;
+int secDight = number/10%10; 
+int lastDight = number%10;
+int numberWithoutLast = number - lastDight;
+int numberDivided10 = numberWithoutLast/10;
+int numberWithNewFirst = lastDight*100 + (numberDivided10/10)*10 + (number - lastDight)/10%10;
+int resultNumber = (number%10)*100 + (((number - (number%10))/10)/10)*10 + ((number - (number%10))/10)%10;
 
 
+Console.WriteLine((number%10));
+Console.WriteLine(resultNumber);
+Console.WriteLine(firstDight);
+Console.WriteLine(secDight);
 
 
 // Home_25. В трехзначном числе x зачеркнули первую цифру. Когда оставшееся число умножили на 10, а произведение сложили с первой цифрой числа x, 
