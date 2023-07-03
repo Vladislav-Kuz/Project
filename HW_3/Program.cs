@@ -254,9 +254,6 @@
 // Home_23. Дано трехзначное число, в котором все цифры различны. Получить шесть чисел, образованных при перестановке цифр заданного числа.
 
 
-// //====Console.WriteLine("Введите целое число");
-// //====Console.WriteLine("Число " + int.Parse(Console.ReadLine()!));
-// //====int parseNumber = int.Parse(Console.ReadLine()!);
 
 // Console.Write("Введите трехзначное число: ");
 // string? stringNumber = Console.ReadLine()!;
