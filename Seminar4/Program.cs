@@ -55,6 +55,29 @@
 // Console.WriteLine($"Факториал числа !{numberParse} = {result}");
 
 
+
+
+      
+        
+// Console.Write("Введите целое число: ");
+// int numberParse = int.Parse(Console.ReadLine()!);
+// int N = numberParse;
+// int factorial = Factorial(N);
+// Console.WriteLine($"Факториал числа !{numberParse} = {factorial}");
+
+//   int Factorial(int n)
+//         {
+//         if (n==1)
+//         {
+//             return 1;
+//         }     
+//         return n*Factorial(n - 1);
+//         }
+
+
+
+
+
 // Нужно заполнить массив из 8-ми элементов случайными нулями и единицами
 // int size = 8;
 // int[] array = new int[size];

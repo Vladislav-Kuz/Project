@@ -1,0 +1,15 @@
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\HW_4.csproj.AssemblyReference.cache
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\HW_4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\HW_4.AssemblyInfoInputs.cache
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\HW_4.AssemblyInfo.cs
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\HW_4.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\bin\Debug\net7.0\HW_4.exe
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\bin\Debug\net7.0\HW_4.deps.json
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\bin\Debug\net7.0\HW_4.runtimeconfig.json
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\bin\Debug\net7.0\HW_4.dll
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\bin\Debug\net7.0\HW_4.pdb
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\HW_4.dll
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\refint\HW_4.dll
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\HW_4.pdb
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\HW_4.genruntimeconfig.cache
+C:\Users\Vlad\Desktop\Учеба\Projects_C#\HW_4\obj\Debug\net7.0\ref\HW_4.dll
