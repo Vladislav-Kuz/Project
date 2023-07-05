@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Vlad\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\400zadach\\400zadach.csproj",
+      "projectUniqueName": "D:\\Education\\Project\\400zadach\\400zadach.csproj",
       "projectName": "400zadach",
-      "projectPath": "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\400zadach\\400zadach.csproj",
-      "packagesPath": "C:\\Users\\Vlad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\400zadach\\obj\\",
+      "projectPath": "D:\\Education\\Project\\400zadach\\400zadach.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\Education\\Project\\400zadach\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vlad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }
