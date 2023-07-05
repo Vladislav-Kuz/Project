@@ -207,31 +207,53 @@
 // x = xyz = xyz-z = (xyz-z)/10 = z(xy) = 237
 
 //int resultNumber = 237;
-int number=237;
-int firstDight = number/100;
-int secDight = number/10%10; 
-int lastDight = number%10;
-int numberWithoutLast = number - lastDight;
-int numberDivided10 = numberWithoutLast/10;
-int numberWithNewFirst = lastDight*100 + (numberDivided10/10)*10 + (number - lastDight)/10%10;
-int resultNumber = (number%10)*100 + (((number - (number%10))/10)/10)*10 + ((number - (number%10))/10)%10;
+// int number=237;
+// int firstDight = number/100;
+// int secDight = number/10%10; 
+// int lastDight = number%10;
+// int numberWithoutLast = number - lastDight;
+// int numberDivided10 = numberWithoutLast/10;
+// int numberWithNewFirst = lastDight*100 + (numberDivided10/10)*10 + (number - lastDight)/10%10;
+// int resultNumber = (number%10)*100 + (((number - (number%10))/10)/10)*10 + ((number - (number%10))/10)%10;
 
 
-Console.WriteLine((number%10));
-Console.WriteLine(resultNumber);
-Console.WriteLine(firstDight);
-Console.WriteLine(secDight);
+// Console.WriteLine((number%10));
+// Console.WriteLine(resultNumber);
+// Console.WriteLine(firstDight);
+// Console.WriteLine(secDight);
 
 
 // Home_25. В трехзначном числе x зачеркнули первую цифру. Когда оставшееся число умножили на 10, а произведение сложили с первой цифрой числа x, 
 // то получилось число 564. Найти число x.
 
+// res1=564 - x1; x1=564%10; res2= res1/10 if res1%10=0; x1*100 + res2  
+
+// int number = 564;
+// int firstDight = number/100;
+// int secDight = number/10%10; 
+// int lastDight = number%10;
+
+// int x1 = number%10; // младший разряд определяется так
+// int res1 = number - x1; // вычли цифру, то есть это младший разряд
+// int res2 = res1/10; // обратная операция умножению числа на 10
+// int X = x1*100 + res2; // первым разрядом ставим первую цифру числа X
+// x1 = X/100; // теперь первую цифру можно вырвзить так
+// int x2 = X/10%10; // вторая цифра
+// int x3 = X%10; // третья цифра
+// Console.WriteLine($"{firstDight}, {secDight}, {lastDight}"); // цифры известного числа 564
+// Console.WriteLine($"{x1}, {x2}, {x3}"); // цифры искомого X
+// Console.WriteLine($"{X}"); // вывод искомого числа X
 
 
 /********************************************************************/
 
 // Home_26. В трехзначном числе x зачеркнули его вторую цифру. Когда к образованному при этом двузначному числу слева приписали вторую цифру числа x, 
 // то получилось число 546. Найти число x.
+
+// 546 -> x2*100 + x1*10 + x3 -> x1 * 100 + x2 * 10 + x3 * 1 = X 
+// x2 = 5 - первая цифра известного числа
+// x1 = 4 
+// x3 = 6 
 
 // пусть 546=xyz<-yz<-YXZ=456
 
