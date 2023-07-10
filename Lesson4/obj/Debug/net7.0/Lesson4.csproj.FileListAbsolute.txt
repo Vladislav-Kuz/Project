@@ -1,0 +1,15 @@
+D:\Education\Project\Lesson4\bin\Debug\net7.0\Lesson4.exe
+D:\Education\Project\Lesson4\bin\Debug\net7.0\Lesson4.deps.json
+D:\Education\Project\Lesson4\bin\Debug\net7.0\Lesson4.runtimeconfig.json
+D:\Education\Project\Lesson4\bin\Debug\net7.0\Lesson4.dll
+D:\Education\Project\Lesson4\bin\Debug\net7.0\Lesson4.pdb
+D:\Education\Project\Lesson4\obj\Debug\net7.0\Lesson4.csproj.AssemblyReference.cache
+D:\Education\Project\Lesson4\obj\Debug\net7.0\Lesson4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Education\Project\Lesson4\obj\Debug\net7.0\Lesson4.AssemblyInfoInputs.cache
+D:\Education\Project\Lesson4\obj\Debug\net7.0\Lesson4.AssemblyInfo.cs
+D:\Education\Project\Lesson4\obj\Debug\net7.0\Lesson4.csproj.CoreCompileInputs.cache
+D:\Education\Project\Lesson4\obj\Debug\net7.0\Lesson4.dll
+D:\Education\Project\Lesson4\obj\Debug\net7.0\refint\Lesson4.dll
+D:\Education\Project\Lesson4\obj\Debug\net7.0\Lesson4.pdb
+D:\Education\Project\Lesson4\obj\Debug\net7.0\Lesson4.genruntimeconfig.cache
+D:\Education\Project\Lesson4\obj\Debug\net7.0\ref\Lesson4.dll
