@@ -73,51 +73,52 @@
 Console.WriteLine("Программа, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2;");
 Console.WriteLine();
 
+ //----------------------------------------------//
+ // Тело программы                               //
+ //----------------------------------------------//
 
-int tryCount = 0;
-
-Console.WriteLine("Введите коэффициенты: ");
-Console.Write($"k1 = ");   
-string strCoef1 = Console.ReadLine()!;
-if (element != string.Empty)        // условие для нормального заполнения элементов массива
-{
-    double k1 = Coordinates[0];
-
-//             tryCount = 0;
-//         }
-//         else 
-//         {
-//             int tryMax = 3;                 // число попыток ввода
-//             if (tryCount < tryMax)          // условие для возможности повторного ввода
-//             {
-//                 Console.Write($"Повторите ввод: ");
-//                 i--;
-//                 tryCount++;
-//             }
-//             else                            // условие. если n-раз не введен элемент
-//             {
-//                 string randomElement = Convert.ToString(new Random().Next(10, 1001));   // генерируем число от 10 до 1000 включительно
-//                 array[i] = randomElement;   // после 3-х попыток ввода кладем в элемент случайное число
-//                 Console.WriteLine($"вы не ввели элемент A[{i+1}], подставляю случайный A[{i+1}] = {randomElement}"); // нумерация условная, для пользователя, 0-й элемент отображен как 1-й элемент массива
-//                 tryCount = 0;
-//             }
-//         }
-//     }
-
-
-
-double[] Coordinates = GetArray(4);
+int size = 4;
+double[] Coordinates = GetArray(size);
 double k1 = Coordinates[0];
-double b1=Coordinates[1];
-double k2=Coordinates[2];
-double b2=Coordinates[3];
-
+double b1 = Coordinates[1];
+double k2 = Coordinates[2];
+double b2 = Coordinates[3];
 double[] ResultInterceptPoint = SearchinterceptPoint(k1,b1,k2,b2);
 if (Double.IsInfinity(ResultInterceptPoint[0])||Double.IsInfinity(ResultInterceptPoint[1])) 
-Console.WriteLine($"Прямые не пересекаются");  
+    Console.WriteLine($"Прямые не пересекаются"); 
+else if(k1==k2 && b1==b2)
+    Console.WriteLine($"Прямые совпадают");
 else 
-Console.WriteLine($"Прямые y(x)={k1}x+{b1} и y(x)={k2}x+{b2} пересекаются в  точке А[x,y] = A[{string.Join("; ", ResultInterceptPoint)}]");
+    Console.WriteLine($"Прямые y(x)={k1}x+{b1} и y(x)={k2}x+{b2} пересекаются в  точке А[x,y] = A[{string.Join("; ", ResultInterceptPoint)}]");
 
+
+ //----------------------------------------------//
+ // Метод получения коэффициентов                //
+ //----------------------------------------------//
+
+double[] GetArray(int size)
+{
+    double result;
+    double[] coef = new double[size];
+    Console.WriteLine("Введите коэффициенты: ");
+    for(int i=0; i<size; i++)
+    {
+        if(i==0) Console.WriteLine("коэффициент k1 = ");
+        else if(i==1) Console.WriteLine("коэффициент b1 = ");
+        else if(i==2) Console.WriteLine("коэффициент k2 = ");
+        else Console.WriteLine("коэффициент b2 = ");
+        string strCoef = Console.ReadLine()!;
+        bool resParsing = double.TryParse(strCoef, out result);
+        if(resParsing) 
+            coef[i]=result;
+        else
+        { 
+            Console.Write("Повторите ввод\n");
+            i--;
+        }
+    }
+return coef;
+}
  
 
  //----------------------------------------------//
