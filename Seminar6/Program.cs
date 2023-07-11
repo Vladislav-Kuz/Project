@@ -118,3 +118,62 @@
 // }
 
 // Console.WriteLine($"Массив: {string.Join("; ", fibonacci)}");
+
+
+
+
+
+
+
+Console.WriteLine();
+Console.WriteLine("Программа, переводящая десятичное число в двоичное");
+Console.WriteLine();
+
+
+//---------------------------------------//
+// Метод вычисления количества разрядов  //
+//---------------------------------------//
+
+int CalcSizeOfNumber(int digits)
+{
+    int count=1;
+    int result = digits;
+    while(result/2>0)
+    {   
+        result = result/2;
+        count++;
+    } 
+    Console.WriteLine($"В числе {count} разрядов");
+    return count;
+}
+
+
+//---------------------------------------//
+// Метод вычисления получения двоичного  //
+//          числа                        //
+//---------------------------------------//
+
+int[] CreateBinary(int size, int digit)
+{
+    
+    int[] arr = new int[size];
+    int result = digit;
+    for(int i=0; i<size; i++)
+    {
+        arr[size-1-i] = result%2;
+        result=result/2; 
+    }
+    Console.WriteLine();
+    return arr;
+} 
+
+
+//---------------------------------------//
+// Метод вычисления количества разрядов  //
+//---------------------------------------//
+
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int length = CalcSizeOfNumber(number); 
+int[] resArray = CreateBinary(length, number);
+Console.Write($"Число {number} в двоичном коде = {string.Join(" ", resArray)}.");
