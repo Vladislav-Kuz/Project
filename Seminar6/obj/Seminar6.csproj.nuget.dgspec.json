@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\400zadach\\400zadach.csproj": {}
+    "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\Seminar6\\Seminar6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\400zadach\\400zadach.csproj": {
+    "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\Seminar6\\Seminar6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\400zadach\\400zadach.csproj",
-        "projectName": "400zadach",
-        "projectPath": "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\400zadach\\400zadach.csproj",
+        "projectUniqueName": "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\Seminar6\\Seminar6.csproj",
+        "projectName": "Seminar6",
+        "projectPath": "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\Seminar6\\Seminar6.csproj",
         "packagesPath": "C:\\Users\\Vlad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\400zadach\\obj\\",
+        "outputPath": "C:\\Users\\Vlad\\Desktop\\Учеба\\Projects_C#\\Seminar6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vlad\\AppData\\Roaming\\NuGet\\NuGet.Config",
