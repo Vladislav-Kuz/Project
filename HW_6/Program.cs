@@ -70,71 +70,71 @@
 
 
 
-Console.WriteLine("Программа, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2;");
-Console.WriteLine();
+// Console.WriteLine("Программа, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2;");
+// Console.WriteLine();
 
- //----------------------------------------------//
- // Тело программы                               //
- //----------------------------------------------//
+//  //----------------------------------------------//
+//  // Тело программы                               //
+//  //----------------------------------------------//
 
-int size = 4;
-double[] Coordinates = GetArray(size);
-double k1 = Coordinates[0];
-double b1 = Coordinates[1];
-double k2 = Coordinates[2];
-double b2 = Coordinates[3];
-double[] ResultInterceptPoint = SearchinterceptPoint(k1,b1,k2,b2);
-if (Double.IsInfinity(ResultInterceptPoint[0])||Double.IsInfinity(ResultInterceptPoint[1])) 
-    Console.WriteLine($"Прямые не пересекаются"); 
-else if(k1==k2 && b1==b2)
-    Console.WriteLine($"Прямые совпадают");
-else 
-    Console.WriteLine($"Прямые y(x)={k1}x+{b1} и y(x)={k2}x+{b2} пересекаются в  точке А[x,y] = A[{string.Join("; ", ResultInterceptPoint)}]");
+// int size = 4;
+// double[] Coordinates = GetArray(size);
+// double k1 = Coordinates[0];
+// double b1 = Coordinates[1];
+// double k2 = Coordinates[2];
+// double b2 = Coordinates[3];
+// double[] ResultInterceptPoint = SearchinterceptPoint(k1,b1,k2,b2);
+// if (Double.IsInfinity(ResultInterceptPoint[0])||Double.IsInfinity(ResultInterceptPoint[1])) 
+//     Console.WriteLine($"Прямые не пересекаются"); 
+// else if(k1==k2 && b1==b2)
+//     Console.WriteLine($"Прямые совпадают");
+// else 
+//     Console.WriteLine($"Прямые y(x)={k1}x+{b1} и y(x)={k2}x+{b2} пересекаются в  точке А[x,y] = A[{string.Join("; ", ResultInterceptPoint)}]");
 
 
- //----------------------------------------------//
- // Метод получения коэффициентов                //
- //----------------------------------------------//
+//  //----------------------------------------------//
+//  // Метод получения коэффициентов                //
+//  //----------------------------------------------//
 
-double[] GetArray(int size)
-{
-    double result;
-    double[] coef = new double[size];
-    Console.WriteLine("Введите коэффициенты: ");
-    for(int i=0; i<size; i++)
-    {
-        if(i==0) Console.WriteLine("коэффициент k1 = ");
-        else if(i==1) Console.WriteLine("коэффициент b1 = ");
-        else if(i==2) Console.WriteLine("коэффициент k2 = ");
-        else Console.WriteLine("коэффициент b2 = ");
-        string strCoef = Console.ReadLine()!;
-        bool resParsing = double.TryParse(strCoef, out result);
-        if(resParsing) 
-            coef[i]=result;
-        else
-        { 
-            Console.Write("Повторите ввод\n");
-            i--;
-        }
-    }
-return coef;
-}
+// double[] GetArray(int size)
+// {
+//     double result;
+//     double[] coef = new double[size];
+//     Console.WriteLine("Введите коэффициенты: ");
+//     for(int i=0; i<size; i++)
+//     {
+//         if(i==0) Console.Write("коэффициент k1 = ");
+//         else if(i==1) Console.Write("коэффициент b1 = ");
+//         else if(i==2) Console.Write("коэффициент k2 = ");
+//         else Console.Write("коэффициент b2 = ");
+//         string strCoef = Console.ReadLine()!;
+//         bool resParsing = double.TryParse(strCoef, out result);
+//         if(resParsing) 
+//             coef[i]=result;
+//         else
+//         { 
+//             Console.Write("Повторите ввод\n");
+//             i--;
+//         }
+//     }
+// return coef;
+// }
  
 
- //----------------------------------------------//
- // Метод вычисления точки пересечения           //
- //----------------------------------------------//
+//  //----------------------------------------------//
+//  // Метод вычисления точки пересечения           //
+//  //----------------------------------------------//
 
-double[] SearchinterceptPoint(double angle1, double bias1, double angle2, double bias2)
-{
-int length = 2;
-double[] interceptCoordinate = new double[length];
-double x = (bias2-bias1)/(angle1-angle2);
-double y = ((angle1*(bias2-bias1)/(angle1-angle2)) + bias1);
-interceptCoordinate[0] = x;
-interceptCoordinate[1] = y;
-return interceptCoordinate;     
-}
+// double[] SearchinterceptPoint(double angle1, double bias1, double angle2, double bias2)
+// {
+// int length = 2;
+// double[] interceptCoordinate = new double[length];
+// double x = (bias2-bias1)/(angle1-angle2);
+// double y = ((angle1*(bias2-bias1)/(angle1-angle2)) + bias1);
+// interceptCoordinate[0] = x;
+// interceptCoordinate[1] = y;
+// return interceptCoordinate;     
+// }
 
  //----------------------------------------------//
 
