@@ -225,12 +225,12 @@
 // }
 
 // Факториал числа через рекрсию
-Console.Write("Введите целое число: ");
-int numberParse = int.Parse(Console.ReadLine()!);
-int N = numberParse;
-Console.WriteLine($"Факториал числа !{numberParse} = {Factorial(N)}");
-double Factorial(int n)
-{
-    if (n==1) return 1;
-    else return n*Factorial(n - 1);
-}
+// Console.Write("Введите целое число: ");
+// int numberParse = int.Parse(Console.ReadLine()!);
+// int N = numberParse;
+// Console.WriteLine($"Факториал числа !{numberParse} = {Factorial(N)}");
+// double Factorial(int n)
+// {
+//     if (n==1) return 1;
+//     else return n*Factorial(n - 1);
+// }
