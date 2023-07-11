@@ -2,60 +2,60 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-Console.WriteLine("Задача: посчитать, сколько чисел больше 0 ввёл пользователь");
-Console.WriteLine();
+// Console.WriteLine("Задача: посчитать, сколько чисел больше 0 ввёл пользователь");
+// Console.WriteLine();
 
-//----------------------------------------------//
-// Тело программы                               //
-//----------------------------------------------//
+// //----------------------------------------------//
+// // Тело программы                               //
+// //----------------------------------------------//
 
-Console.Write("Сколько элементов массива вы будете вводить? ");
-string strNumber = new string(Console.ReadLine());
-bool resParseLength = int.TryParse(strNumber, out int NumberOfElements);
-if (resParseLength)
-{
-    int[] userArray = GetArray(NumberOfElements);
-    int res = CountPositiveSumm(userArray);
-    Console.Write($"В массиве: [{string.Join("; ", userArray)}] количество положительных чисел: {res}");
-}
-else Console.Write("Введены некорректные данные");
+// Console.Write("Сколько элементов массива вы будете вводить? ");
+// string strNumber = new string(Console.ReadLine());
+// bool resParseLength = int.TryParse(strNumber, out int NumberOfElements);
+// if (resParseLength)
+// {
+//     int[] userArray = GetArray(NumberOfElements);
+//     int res = CountPositiveSumm(userArray);
+//     Console.Write($"В массиве: [{string.Join("; ", userArray)}] количество положительных чисел: {res}");
+// }
+// else Console.Write("Введены некорректные данные");
 
-//----------------------------------------------//
-// Метод формирования массива                   //
-//----------------------------------------------//
+// //----------------------------------------------//
+// // Метод формирования массива                   //
+// //----------------------------------------------//
 
-int[] GetArray(int size)
-{
-    int[] array = new int[size];
-    size = array.Length;
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"Элемент A[{i}] = ");
-        string? readElement = Console.ReadLine();
-        bool resParseLength = int.TryParse(readElement, out int ElementIsNumber);
-        if (resParseLength) array[i] = ElementIsNumber;
-        else
-        {
-            Console.WriteLine("Введен некорректный элемент, повторите ввод");
-            i--;
-        }
-    }
-    return array;
-}
+// int[] GetArray(int size)
+// {
+//     int[] array = new int[size];
+//     size = array.Length;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"Элемент A[{i}] = ");
+//         string? readElement = Console.ReadLine();
+//         bool resParseLength = int.TryParse(readElement, out int ElementIsNumber);
+//         if (resParseLength) array[i] = ElementIsNumber;
+//         else
+//         {
+//             Console.WriteLine("Введен некорректный элемент, повторите ввод");
+//             i--;
+//         }
+//     }
+//     return array;
+// }
 
-//----------------------------------------------//
-// Метод подсчета элементов                     //
-//----------------------------------------------//
+// //----------------------------------------------//
+// // Метод подсчета элементов                     //
+// //----------------------------------------------//
 
-int CountPositiveSumm(int[] arr)
-{
-    int count = 0;
-    foreach (int item in arr)
-    {
-        if (item > 0) count++;
-    }
-    return count;
-}
+// int CountPositiveSumm(int[] arr)
+// {
+//     int count = 0;
+//     foreach (int item in arr)
+//     {
+//         if (item > 0) count++;
+//     }
+//     return count;
+// }
 
  //----------------------------------------------//
 
