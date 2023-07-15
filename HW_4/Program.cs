@@ -132,31 +132,31 @@
 
 // Задача 29: Та же задача, только с использованием способа, когда его размер увеличивается по мере ввода элементов (нагуглено)
 
-// Console.WriteLine();
-// Console.Write($"Программа, которая получает элементы массива с консоли и выводит их на экран.\n");
-// Console.WriteLine();
+Console.WriteLine();
+Console.Write($"Программа, которая получает элементы массива с консоли и выводит их на экран.\n");
+Console.WriteLine();
 
-// string[] array; 
-// int count = 0;                              // количество элементов
-// string element;
-// string[] previosArray; 
-// Console.WriteLine("Введите элементы массива(любая строка): ");
-// array = new string[count];                  // пока массив для count=0 элементов
-// do                                          // постпроверка для того, чтобы в конце среагировать по факту ввода пустого элемента
-// {
-//     Console.Write($"A[{count + 1}]: ");  
-//     element = Console.ReadLine()!;
-//     if (element != string.Empty)
-//     {
-//         count++;
-//         previosArray = new string[count];   // создаем массив, в котором на 1 элемент больше
-//         for (int i = 0; i < previosArray.Length - 1; i++)   // копируем старый массив в новый
-//             previosArray[i] = array[i]!;
-//         previosArray[count - 1] = element;  // добавляем последнюю введенную строку в массив previosArray
-//         array = previosArray;               // дополняем array последним элементом 
-//     }
-// } while (element != string.Empty);
-// Console.WriteLine($"Вы создали массив A[{array.Length}] = [{string.Join("; ", array)}]");
+string[] array; 
+int count = 0;                              // количество элементов
+string element;
+string[] previosArray; 
+Console.WriteLine("Введите элементы массива(любая строка): ");
+array = new string[count];                  // пока массив для count=0 элементов
+do                                          // постпроверка для того, чтобы в конце среагировать по факту ввода пустого элемента
+{
+    Console.Write($"A[{count + 1}]: ");  
+    element = Console.ReadLine()!;
+    if (element != string.Empty)
+    {
+        count++;
+        previosArray = new string[count];   // создаем массив, в котором на 1 элемент больше
+        for (int i = 0; i < previosArray.Length - 1; i++)   // копируем старый массив в новый
+            previosArray[i] = array[i]!;
+        previosArray[count - 1] = element;  // добавляем последнюю введенную строку в массив previosArray
+        array = previosArray;               // дополняем array последним элементом 
+    }
+} while (element != string.Empty);
+Console.WriteLine($"Вы создали массив A[{array.Length}] = [{string.Join("; ", array)}]");
 
 
 

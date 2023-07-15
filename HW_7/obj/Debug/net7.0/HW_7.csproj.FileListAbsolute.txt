@@ -1,0 +1,15 @@
+D:\Education\Project\HW_7\obj\Debug\net7.0\HW_7.csproj.AssemblyReference.cache
+D:\Education\Project\HW_7\obj\Debug\net7.0\HW_7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Education\Project\HW_7\obj\Debug\net7.0\HW_7.AssemblyInfoInputs.cache
+D:\Education\Project\HW_7\obj\Debug\net7.0\HW_7.AssemblyInfo.cs
+D:\Education\Project\HW_7\obj\Debug\net7.0\HW_7.csproj.CoreCompileInputs.cache
+D:\Education\Project\HW_7\bin\Debug\net7.0\HW_7.exe
+D:\Education\Project\HW_7\bin\Debug\net7.0\HW_7.deps.json
+D:\Education\Project\HW_7\bin\Debug\net7.0\HW_7.runtimeconfig.json
+D:\Education\Project\HW_7\bin\Debug\net7.0\HW_7.dll
+D:\Education\Project\HW_7\bin\Debug\net7.0\HW_7.pdb
+D:\Education\Project\HW_7\obj\Debug\net7.0\HW_7.dll
+D:\Education\Project\HW_7\obj\Debug\net7.0\refint\HW_7.dll
+D:\Education\Project\HW_7\obj\Debug\net7.0\HW_7.pdb
+D:\Education\Project\HW_7\obj\Debug\net7.0\HW_7.genruntimeconfig.cache
+D:\Education\Project\HW_7\obj\Debug\net7.0\ref\HW_7.dll
