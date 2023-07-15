@@ -49,7 +49,7 @@ double[,] GetRandomMatrix(int row, int column, int powerIndex)
     double[,] matrix = new double[row, column];
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)// n, цикл по столбцам
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
             double randomNumber = Math.Round((Math.Pow(10, powerIndex) * new Random().NextDouble()), 3);
             matrix[i, j] = randomNumber;
