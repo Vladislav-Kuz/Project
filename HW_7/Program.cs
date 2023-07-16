@@ -3,6 +3,7 @@
 + "2 - Задача 50: Программа, которая на вход принимает позиции элемента в двумерном массиве,\n"
 + "\tи возвращает значение этого элемента или же указание, что такого элемента нет.\n"
 + "3 - Задача 52: Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.");
+
 Console.WriteLine();
 Console.Write("Ваш выбор: ");
 int choice = Convert.ToInt32(Console.ReadLine());
@@ -62,28 +63,37 @@ double[,] GetRandomMatrix(int row, int column, int powerIndex)
 // 3. Метод печати вещественного массива
 void PrintDoubleMatrix(double[,] matrix)
 {
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    if (matrix.GetLength(0) != 0 && matrix.GetLength(1) != 0)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
-            Console.Write($"{matrix[i, j]} \t");
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                Console.Write($"{matrix[i, j]} \t");
+            }
+            Console.WriteLine();
         }
-        Console.WriteLine();
     }
+    else Console.WriteLine("Задан пустой массив!");
+
 }
 
 //*********************************************************/
 // Метод печати целочисленного массива
 void PrintIntMatrix(int[,] matrix)
 {
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    if (matrix.GetLength(0) != 0 && matrix.GetLength(1) != 0)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
-            Console.Write($"{matrix[i, j]} \t");
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                Console.Write($"{matrix[i, j]} \t");
+            }
+            Console.WriteLine();
         }
-        Console.WriteLine();
     }
+    else Console.WriteLine("Задан пустой массив!");
 }
 
 //*********************************************************/
@@ -93,7 +103,7 @@ int[,] GetIntRndMatrix(int row, int column, int minRandom, int maxRandom)
     int[,] matrix = new int[row, column];
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int j = 02; j < matrix.GetLength(1); j++)
         {
             int randomNumber = new Random().Next(minRandom, maxRandom + 1);
             matrix[i, j] = randomNumber;
@@ -135,7 +145,7 @@ void task2()
     Console.WriteLine();
     string inputRows = "Введите количество cтрок: ";
     string inputColumns = "Введите количество cтолбцов: ";
-    string inputPointRow = "Задайте номер строки икомого элемента: ";
+    string inputPointRow = "Задайте номер строки искомого элемента: ";
     string inputPointColumn = "Задайте номер столбца икомого элемента: ";
 
     Console.WriteLine("\tСоздайте двумерный массив - ");
@@ -145,7 +155,7 @@ void task2()
     Console.WriteLine("\tВведите позицию(индексы) искомого элемента - ");
     int rowIndexInput = Math.Abs(ParsingInput(inputPointRow));
     int columnIndexInput = Math.Abs(ParsingInput(inputPointColumn));
-    int minRandom = 10;
+    int minRandom = 10; 
     int maxRandom = 100;
 
     int[,] matrixToWork = GetIntRndMatrix(rows, columns, minRandom, maxRandom);
