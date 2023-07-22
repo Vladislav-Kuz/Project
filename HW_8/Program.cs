@@ -368,7 +368,77 @@ void task5()
     // 12 13 14 05
     // 11 16 15 06
     // 10 09 08 07
-}
+
+    Console.WriteLine();
+    Console.WriteLine("Напишите программу, которая заполнит массив спирально, элементы - последовательный счетчик от 0.");
+    Console.WriteLine();
+
+    string inputRows = "Введите количество cтрок: ";
+    string inputColumns = "Введите количество cтолбцов: ";
+    Console.WriteLine("\tСоздайте двумерный массив - ");
+    int rows = ParsingInput(inputRows);
+    int columns = ParsingInput(inputColumns);
+    PrintIntMatrix(FillMatrixBySpiral(rows, columns));
+
+
+    //*****************************************************************************************
+    // Метод заполнения матрицы по спирали
+    //*****************************************************************************************
+    int[,] FillMatrixBySpiral(int m, int n)
+    {
+        int[,] array = new int[m, n];
+        int countElems = 0; // счетчик количества элементов, внесенных в массив
+        int countRows = 0; // счетчик циклов для заполнения строк
+        int countCols = 0; // счетчик циклов для заполнения столбцов
+        while (countElems < (m * n) - 1)
+        {
+            for (int j = countCols; j < n - 1 - countCols; j++)
+            {
+                if (countElems < (m * n))
+                {
+                    int i = countRows;
+                    array[i, j] = countElems;
+                    countElems++;
+                }
+            }
+            for (int i = countRows; i < m - 1 - countRows; i++)
+            {
+                if (countElems < (m * n))
+                {
+                    int j = n - 1 - countCols;
+                    array[i, j] = countElems;
+                    countElems++;
+                }
+            }
+            for (int j = n - 1 - countCols; j > countCols; j--)
+            {
+                if (countElems < (m * n))
+                {
+                    int i = m - 1 - countRows;
+                    array[i, j] = countElems;
+                    countElems++;
+                }
+            }
+            for (int i = m - 1 - countRows; i > countRows; i--) //+1-countRows
+            {
+                if (countElems < (m * n))
+                {
+                    int j = countCols;
+                    array[i, j] = countElems;
+                    countElems++;
+                }
+            }
+            countRows++;
+            countCols++;
+        }
+        if (m == n && m % 2 != 0)
+        {
+            array[m / 2, n / 2] = countElems;
+            countElems++;
+        }
+        return array;
+    }//END OF METHOD
+}//END OF TASK
 
 
 //*****************************************//
